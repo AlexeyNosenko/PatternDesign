@@ -18,10 +18,10 @@
 
 import Foundation
 
-class Singleton {
+class Singleton : Pattern {
     static var shared = Singleton()
     
-    private init(){
+    private override init(){
         print("create Singleton")
     }
 }

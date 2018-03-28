@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F7E196D206C090200AB8B2F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7E196C206C090200AB8B2F /* Extensions.swift */; };
+		1F7E196F206C092000AB8B2F /* Pattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7E196E206C092000AB8B2F /* Pattern.swift */; };
 		1F94DD6D20695464002024A3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F94DD6C20695464002024A3 /* main.swift */; };
 		1FFA6F11206954F000611D1F /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFA6F10206954F000611D1F /* Singleton.swift */; };
 		1FFA6F142069551300611D1F /* Testable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFA6F132069551300611D1F /* Testable.swift */; };
@@ -26,6 +28,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1F7E196C206C090200AB8B2F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		1F7E196E206C092000AB8B2F /* Pattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pattern.swift; sourceTree = "<group>"; };
 		1F94DD6920695463002024A3 /* PatternDesign */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PatternDesign; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F94DD6C20695464002024A3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		1FFA6F10206954F000611D1F /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
@@ -91,6 +95,8 @@
 			isa = PBXGroup;
 			children = (
 				1FFA6F132069551300611D1F /* Testable.swift */,
+				1F7E196C206C090200AB8B2F /* Extensions.swift */,
+				1F7E196E206C092000AB8B2F /* Pattern.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -153,6 +159,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F7E196F206C092000AB8B2F /* Pattern.swift in Sources */,
+				1F7E196D206C090200AB8B2F /* Extensions.swift in Sources */,
 				1F94DD6D20695464002024A3 /* main.swift in Sources */,
 				1FFA6F172069554A00611D1F /* SingletonTest.swift in Sources */,
 				1FFA6F11206954F000611D1F /* Singleton.swift in Sources */,
