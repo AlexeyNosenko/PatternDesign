@@ -8,9 +8,8 @@
 
 import Foundation
 
-
-extension Pattern: Hashable {
-    static func ==(lhs: Pattern, rhs: Pattern) -> Bool {
+extension Comparison: Hashable {
+    static func ==(lhs: Comparison, rhs: Comparison) -> Bool {
         return ObjectIdentifier(lhs).hashValue == ObjectIdentifier(rhs).hashValue
     }
     

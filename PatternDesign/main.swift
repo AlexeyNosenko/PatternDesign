@@ -8,9 +8,12 @@
 
 import Foundation
 
-print("Hello, World!")
-let tests: [Testable] = [SingletonTest.init()]
+print(" ------- Patterns ------- ")
+let tests: [Testable] = [SingletonTest(),
+                         PrototypeTest()]
 
 for t in tests {
+    t.printName()
     t.test()
 }
+

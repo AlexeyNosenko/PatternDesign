@@ -18,7 +18,7 @@
 
 import Foundation
 
-class Singleton : Pattern {
+class Singleton: Comparison {
     static var shared = Singleton()
     
     private override init(){

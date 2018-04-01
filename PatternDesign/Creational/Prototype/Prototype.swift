@@ -1,5 +1,5 @@
 //
-//  Pattern.swift
+//  Prototype.swift
 //  PatternDesign
 //
 //  Created by Алексей on 28.03.2018.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-class Pattern {
-    
+protocol Prototype {
+    func clone() -> Prototype
 }

@@ -9,6 +9,6 @@
 import Foundation
 
 protocol Testable {
-    func showInfo()
+    func printName()
     func test()
 }
