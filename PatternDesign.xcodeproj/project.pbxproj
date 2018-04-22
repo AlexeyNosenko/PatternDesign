@@ -14,6 +14,11 @@
 		1F48DA42208CC41F00A86CB8 /* DecoratorFacebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48DA41208CC41F00A86CB8 /* DecoratorFacebook.swift */; };
 		1F48DA44208CC43400A86CB8 /* DecoratorPush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48DA43208CC43300A86CB8 /* DecoratorPush.swift */; };
 		1F48DA46208CC5CA00A86CB8 /* ConcreteNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48DA45208CC5CA00A86CB8 /* ConcreteNotification.swift */; };
+		1F48DA56208CECAE00A86CB8 /* AdapterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48DA55208CECAE00A86CB8 /* AdapterProtocol.swift */; };
+		1F48DA58208CECD600A86CB8 /* Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48DA57208CECD600A86CB8 /* Adapter.swift */; };
+		1F48DA5A208CED7400A86CB8 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48DA59208CED7400A86CB8 /* Service.swift */; };
+		1F48DA5C208CEECB00A86CB8 /* AdapterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48DA5B208CEECB00A86CB8 /* AdapterTest.swift */; };
+		1F48DA5E208CF03300A86CB8 /* AdapterTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48DA5D208CF03300A86CB8 /* AdapterTwo.swift */; };
 		1F7E196D206C090200AB8B2F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7E196C206C090200AB8B2F /* Extensions.swift */; };
 		1F7E196F206C092000AB8B2F /* Comparison.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7E196E206C092000AB8B2F /* Comparison.swift */; };
 		1F7E1973206C0D8700AB8B2F /* Prototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7E1972206C0D8700AB8B2F /* Prototype.swift */; };
@@ -45,6 +50,11 @@
 		1F48DA41208CC41F00A86CB8 /* DecoratorFacebook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoratorFacebook.swift; sourceTree = "<group>"; };
 		1F48DA43208CC43300A86CB8 /* DecoratorPush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoratorPush.swift; sourceTree = "<group>"; };
 		1F48DA45208CC5CA00A86CB8 /* ConcreteNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcreteNotification.swift; sourceTree = "<group>"; };
+		1F48DA55208CECAE00A86CB8 /* AdapterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterProtocol.swift; sourceTree = "<group>"; };
+		1F48DA57208CECD600A86CB8 /* Adapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adapter.swift; sourceTree = "<group>"; };
+		1F48DA59208CED7400A86CB8 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		1F48DA5B208CEECB00A86CB8 /* AdapterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterTest.swift; sourceTree = "<group>"; };
+		1F48DA5D208CF03300A86CB8 /* AdapterTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterTwo.swift; sourceTree = "<group>"; };
 		1F7E196C206C090200AB8B2F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		1F7E196E206C092000AB8B2F /* Comparison.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comparison.swift; sourceTree = "<group>"; };
 		1F7E1972206C0D8700AB8B2F /* Prototype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prototype.swift; sourceTree = "<group>"; };
@@ -85,6 +95,11 @@
 		1F48DA47208CCA3000A86CB8 /* Adapter */ = {
 			isa = PBXGroup;
 			children = (
+				1F48DA55208CECAE00A86CB8 /* AdapterProtocol.swift */,
+				1F48DA57208CECD600A86CB8 /* Adapter.swift */,
+				1F48DA59208CED7400A86CB8 /* Service.swift */,
+				1F48DA5B208CEECB00A86CB8 /* AdapterTest.swift */,
+				1F48DA5D208CF03300A86CB8 /* AdapterTwo.swift */,
 			);
 			path = Adapter;
 			sourceTree = "<group>";
@@ -230,15 +245,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F7E196F206C092000AB8B2F /* Comparison.swift in Sources */,
+				1F48DA58208CECD600A86CB8 /* Adapter.swift in Sources */,
 				1F48DA44208CC43400A86CB8 /* DecoratorPush.swift in Sources */,
+				1F48DA5E208CF03300A86CB8 /* AdapterTwo.swift in Sources */,
 				1F48DA38208CC1D900A86CB8 /* Decorator.swift in Sources */,
+				1F48DA56208CECAE00A86CB8 /* AdapterProtocol.swift in Sources */,
 				1F48DA3E208CC34200A86CB8 /* BaseNotification.swift in Sources */,
 				1F7E196D206C090200AB8B2F /* Extensions.swift in Sources */,
 				1F7E1977206C133000AB8B2F /* Product.swift in Sources */,
 				1F7E1973206C0D8700AB8B2F /* Prototype.swift in Sources */,
 				1F94DD6D20695464002024A3 /* main.swift in Sources */,
+				1F48DA5A208CED7400A86CB8 /* Service.swift in Sources */,
 				1F7E1975206C10BB00AB8B2F /* PrototypeTest.swift in Sources */,
 				1F48DA42208CC41F00A86CB8 /* DecoratorFacebook.swift in Sources */,
+				1F48DA5C208CEECB00A86CB8 /* AdapterTest.swift in Sources */,
 				1FFA6F172069554A00611D1F /* SingletonTest.swift in Sources */,
 				1FFA6F11206954F000611D1F /* Singleton.swift in Sources */,
 				1FFA6F142069551300611D1F /* Testable.swift in Sources */,
