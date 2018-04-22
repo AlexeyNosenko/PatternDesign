@@ -10,7 +10,8 @@ import Foundation
 
 print(" ------- Patterns ------- ")
 let tests: [Testable] = [SingletonTest(),
-                         PrototypeTest()]
+                         PrototypeTest(),
+                         DecoratorTest()]
 
 for t in tests {
     t.printName()

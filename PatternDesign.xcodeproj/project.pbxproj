@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F48DA38208CC1D900A86CB8 /* Decorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48DA37208CC1D900A86CB8 /* Decorator.swift */; };
+		1F48DA3A208CC23700A86CB8 /* DecoratorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48DA39208CC23700A86CB8 /* DecoratorTest.swift */; };
+		1F48DA3E208CC34200A86CB8 /* BaseNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48DA3D208CC34200A86CB8 /* BaseNotification.swift */; };
+		1F48DA40208CC40F00A86CB8 /* DecoratorSMS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48DA3F208CC40F00A86CB8 /* DecoratorSMS.swift */; };
+		1F48DA42208CC41F00A86CB8 /* DecoratorFacebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48DA41208CC41F00A86CB8 /* DecoratorFacebook.swift */; };
+		1F48DA44208CC43400A86CB8 /* DecoratorPush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48DA43208CC43300A86CB8 /* DecoratorPush.swift */; };
+		1F48DA46208CC5CA00A86CB8 /* ConcreteNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48DA45208CC5CA00A86CB8 /* ConcreteNotification.swift */; };
 		1F7E196D206C090200AB8B2F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7E196C206C090200AB8B2F /* Extensions.swift */; };
 		1F7E196F206C092000AB8B2F /* Comparison.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7E196E206C092000AB8B2F /* Comparison.swift */; };
 		1F7E1973206C0D8700AB8B2F /* Prototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7E1972206C0D8700AB8B2F /* Prototype.swift */; };
@@ -31,6 +38,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1F48DA37208CC1D900A86CB8 /* Decorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decorator.swift; sourceTree = "<group>"; };
+		1F48DA39208CC23700A86CB8 /* DecoratorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoratorTest.swift; sourceTree = "<group>"; };
+		1F48DA3D208CC34200A86CB8 /* BaseNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNotification.swift; sourceTree = "<group>"; };
+		1F48DA3F208CC40F00A86CB8 /* DecoratorSMS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoratorSMS.swift; sourceTree = "<group>"; };
+		1F48DA41208CC41F00A86CB8 /* DecoratorFacebook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoratorFacebook.swift; sourceTree = "<group>"; };
+		1F48DA43208CC43300A86CB8 /* DecoratorPush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoratorPush.swift; sourceTree = "<group>"; };
+		1F48DA45208CC5CA00A86CB8 /* ConcreteNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcreteNotification.swift; sourceTree = "<group>"; };
 		1F7E196C206C090200AB8B2F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		1F7E196E206C092000AB8B2F /* Comparison.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comparison.swift; sourceTree = "<group>"; };
 		1F7E1972206C0D8700AB8B2F /* Prototype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prototype.swift; sourceTree = "<group>"; };
@@ -54,6 +68,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F48DA36208CC1BE00A86CB8 /* Decorator */ = {
+			isa = PBXGroup;
+			children = (
+				1F48DA37208CC1D900A86CB8 /* Decorator.swift */,
+				1F48DA39208CC23700A86CB8 /* DecoratorTest.swift */,
+				1F48DA3D208CC34200A86CB8 /* BaseNotification.swift */,
+				1F48DA3F208CC40F00A86CB8 /* DecoratorSMS.swift */,
+				1F48DA41208CC41F00A86CB8 /* DecoratorFacebook.swift */,
+				1F48DA43208CC43300A86CB8 /* DecoratorPush.swift */,
+				1F48DA45208CC5CA00A86CB8 /* ConcreteNotification.swift */,
+			);
+			path = Decorator;
+			sourceTree = "<group>";
+		};
+		1F6AAF5F2070E59200862956 /* Structural */ = {
+			isa = PBXGroup;
+			children = (
+				1F48DA36208CC1BE00A86CB8 /* Decorator */,
+			);
+			path = Structural;
+			sourceTree = "<group>";
+		};
 		1F7E1970206C0C9C00AB8B2F /* Creational */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +128,7 @@
 		1F94DD6B20695463002024A3 /* PatternDesign */ = {
 			isa = PBXGroup;
 			children = (
+				1F6AAF5F2070E59200862956 /* Structural */,
 				1F7E1970206C0C9C00AB8B2F /* Creational */,
 				1FFA6F12206954FB00611D1F /* Other */,
 				1F94DD6C20695464002024A3 /* main.swift */,
@@ -185,14 +222,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F7E196F206C092000AB8B2F /* Comparison.swift in Sources */,
+				1F48DA44208CC43400A86CB8 /* DecoratorPush.swift in Sources */,
+				1F48DA38208CC1D900A86CB8 /* Decorator.swift in Sources */,
+				1F48DA3E208CC34200A86CB8 /* BaseNotification.swift in Sources */,
 				1F7E196D206C090200AB8B2F /* Extensions.swift in Sources */,
 				1F7E1977206C133000AB8B2F /* Product.swift in Sources */,
 				1F7E1973206C0D8700AB8B2F /* Prototype.swift in Sources */,
 				1F94DD6D20695464002024A3 /* main.swift in Sources */,
 				1F7E1975206C10BB00AB8B2F /* PrototypeTest.swift in Sources */,
+				1F48DA42208CC41F00A86CB8 /* DecoratorFacebook.swift in Sources */,
 				1FFA6F172069554A00611D1F /* SingletonTest.swift in Sources */,
 				1FFA6F11206954F000611D1F /* Singleton.swift in Sources */,
 				1FFA6F142069551300611D1F /* Testable.swift in Sources */,
+				1F48DA3A208CC23700A86CB8 /* DecoratorTest.swift in Sources */,
+				1F48DA40208CC40F00A86CB8 /* DecoratorSMS.swift in Sources */,
+				1F48DA46208CC5CA00A86CB8 /* ConcreteNotification.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
