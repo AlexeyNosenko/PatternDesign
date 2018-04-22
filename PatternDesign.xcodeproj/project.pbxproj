@@ -82,9 +82,17 @@
 			path = Decorator;
 			sourceTree = "<group>";
 		};
+		1F48DA47208CCA3000A86CB8 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
 		1F6AAF5F2070E59200862956 /* Structural */ = {
 			isa = PBXGroup;
 			children = (
+				1F48DA47208CCA3000A86CB8 /* Adapter */,
 				1F48DA36208CC1BE00A86CB8 /* Decorator */,
 			);
 			path = Structural;
