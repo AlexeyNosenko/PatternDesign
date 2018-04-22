@@ -14,6 +14,11 @@
 		1F48DA42208CC41F00A86CB8 /* DecoratorFacebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48DA41208CC41F00A86CB8 /* DecoratorFacebook.swift */; };
 		1F48DA44208CC43400A86CB8 /* DecoratorPush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48DA43208CC43300A86CB8 /* DecoratorPush.swift */; };
 		1F48DA46208CC5CA00A86CB8 /* ConcreteNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48DA45208CC5CA00A86CB8 /* ConcreteNotification.swift */; };
+		1F48DA56208CECAE00A86CB8 /* AdapterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48DA55208CECAE00A86CB8 /* AdapterProtocol.swift */; };
+		1F48DA58208CECD600A86CB8 /* Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48DA57208CECD600A86CB8 /* Adapter.swift */; };
+		1F48DA5A208CED7400A86CB8 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48DA59208CED7400A86CB8 /* Service.swift */; };
+		1F48DA5C208CEECB00A86CB8 /* AdapterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48DA5B208CEECB00A86CB8 /* AdapterTest.swift */; };
+		1F48DA5E208CF03300A86CB8 /* AdapterTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48DA5D208CF03300A86CB8 /* AdapterTwo.swift */; };
 		1F48DA61208CF26C00A86CB8 /* Mediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48DA60208CF26C00A86CB8 /* Mediator.swift */; };
 		1F48DA63208CF2D300A86CB8 /* ChatProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48DA62208CF2D300A86CB8 /* ChatProtocol.swift */; };
 		1F48DA65208CF32B00A86CB8 /* OneSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48DA64208CF32B00A86CB8 /* OneSubject.swift */; };
@@ -52,6 +57,11 @@
 		1F48DA41208CC41F00A86CB8 /* DecoratorFacebook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoratorFacebook.swift; sourceTree = "<group>"; };
 		1F48DA43208CC43300A86CB8 /* DecoratorPush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoratorPush.swift; sourceTree = "<group>"; };
 		1F48DA45208CC5CA00A86CB8 /* ConcreteNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcreteNotification.swift; sourceTree = "<group>"; };
+		1F48DA55208CECAE00A86CB8 /* AdapterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterProtocol.swift; sourceTree = "<group>"; };
+		1F48DA57208CECD600A86CB8 /* Adapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adapter.swift; sourceTree = "<group>"; };
+		1F48DA59208CED7400A86CB8 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		1F48DA5B208CEECB00A86CB8 /* AdapterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterTest.swift; sourceTree = "<group>"; };
+		1F48DA5D208CF03300A86CB8 /* AdapterTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterTwo.swift; sourceTree = "<group>"; };
 		1F48DA60208CF26C00A86CB8 /* Mediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mediator.swift; sourceTree = "<group>"; };
 		1F48DA62208CF2D300A86CB8 /* ChatProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatProtocol.swift; sourceTree = "<group>"; };
 		1F48DA64208CF32B00A86CB8 /* OneSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneSubject.swift; sourceTree = "<group>"; };
@@ -96,6 +106,18 @@
 			path = Decorator;
 			sourceTree = "<group>";
 		};
+		1F48DA47208CCA3000A86CB8 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				1F48DA55208CECAE00A86CB8 /* AdapterProtocol.swift */,
+				1F48DA57208CECD600A86CB8 /* Adapter.swift */,
+				1F48DA59208CED7400A86CB8 /* Service.swift */,
+				1F48DA5B208CEECB00A86CB8 /* AdapterTest.swift */,
+				1F48DA5D208CF03300A86CB8 /* AdapterTwo.swift */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
 		1F48DA5F208CF22F00A86CB8 /* Mediator */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +135,7 @@
 		1F6AAF5F2070E59200862956 /* Structural */ = {
 			isa = PBXGroup;
 			children = (
+				1F48DA47208CCA3000A86CB8 /* Adapter */,
 				1F48DA5F208CF22F00A86CB8 /* Mediator */,
 				1F48DA36208CC1BE00A86CB8 /* Decorator */,
 			);
@@ -253,9 +276,12 @@
 				1F48DA61208CF26C00A86CB8 /* Mediator.swift in Sources */,
 				1F48DA67208CF34100A86CB8 /* TwoSubject.swift in Sources */,
 				1F7E196F206C092000AB8B2F /* Comparison.swift in Sources */,
+				1F48DA58208CECD600A86CB8 /* Adapter.swift in Sources */,
 				1F48DA63208CF2D300A86CB8 /* ChatProtocol.swift in Sources */,
 				1F48DA44208CC43400A86CB8 /* DecoratorPush.swift in Sources */,
+				1F48DA5E208CF03300A86CB8 /* AdapterTwo.swift in Sources */,
 				1F48DA38208CC1D900A86CB8 /* Decorator.swift in Sources */,
+				1F48DA56208CECAE00A86CB8 /* AdapterProtocol.swift in Sources */,
 				1F48DA3E208CC34200A86CB8 /* BaseNotification.swift in Sources */,
 				1F48DA69208CF4B300A86CB8 /* ChatMediator.swift in Sources */,
 				1F48DA65208CF32B00A86CB8 /* OneSubject.swift in Sources */,
@@ -263,8 +289,10 @@
 				1F7E1977206C133000AB8B2F /* Product.swift in Sources */,
 				1F7E1973206C0D8700AB8B2F /* Prototype.swift in Sources */,
 				1F94DD6D20695464002024A3 /* main.swift in Sources */,
+				1F48DA5A208CED7400A86CB8 /* Service.swift in Sources */,
 				1F7E1975206C10BB00AB8B2F /* PrototypeTest.swift in Sources */,
 				1F48DA42208CC41F00A86CB8 /* DecoratorFacebook.swift in Sources */,
+				1F48DA5C208CEECB00A86CB8 /* AdapterTest.swift in Sources */,
 				1FFA6F172069554A00611D1F /* SingletonTest.swift in Sources */,
 				1F48DA6D208CF63500A86CB8 /* MediatorTest.swift in Sources */,
 				1FFA6F11206954F000611D1F /* Singleton.swift in Sources */,

@@ -12,6 +12,7 @@ print(" ------- Patterns ------- ")
 let tests: [Testable] = [SingletonTest(),
                          PrototypeTest(),
                          DecoratorTest(),
+                         AdapterTest(),
                          MediatorTest()]
 
 for t in tests {
