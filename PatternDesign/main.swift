@@ -11,7 +11,8 @@ import Foundation
 print(" ------- Patterns ------- ")
 let tests: [Testable] = [SingletonTest(),
                          PrototypeTest(),
-                         DecoratorTest()]
+                         DecoratorTest(),
+                         MediatorTest()]
 
 for t in tests {
     t.printName()
