@@ -9,7 +9,7 @@
 import Foundation
 class AdapterTest: Testable {
     func printName() {
-        print(" --- Decorator --- ")
+        print(" --- Adapter --- ")
     }
     
     func test() {

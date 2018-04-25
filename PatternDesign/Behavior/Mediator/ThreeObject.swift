@@ -21,6 +21,6 @@ class ThreeSubject: ChatProtocol {
     }
     
     func receive(message: String) {
-        print("Trhee send message: ", message)
+        print("Trhee receive message: ", message)
     }
 }

@@ -20,6 +20,7 @@ class MediatorTest: Testable {
         mediator.register(colleague: one)
         mediator.register(colleague: two)
         mediator.register(colleague: trhee)
+        print("Two send message")
         mediator.send(sender: two, message: "Hello world!")
     }
 }

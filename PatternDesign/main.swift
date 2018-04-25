@@ -13,10 +13,12 @@ let tests: [Testable] = [SingletonTest(),
                          PrototypeTest(),
                          DecoratorTest(),
                          AdapterTest(),
-                         MediatorTest()]
+                         MediatorTest(),
+                         TemplateTest()]
 
 for t in tests {
     t.printName()
     t.test()
+    print("")
 }
 

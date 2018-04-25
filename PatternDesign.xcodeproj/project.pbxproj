@@ -26,6 +26,10 @@
 		1F48DA69208CF4B300A86CB8 /* ChatMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48DA68208CF4B300A86CB8 /* ChatMediator.swift */; };
 		1F48DA6B208CF5CD00A86CB8 /* ThreeObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48DA6A208CF5CD00A86CB8 /* ThreeObject.swift */; };
 		1F48DA6D208CF63500A86CB8 /* MediatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48DA6C208CF63500A86CB8 /* MediatorTest.swift */; };
+		1F48DA752090EA1800A86CB8 /* CreatePhoneTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48DA742090EA1800A86CB8 /* CreatePhoneTemplate.swift */; };
+		1F48DA772090EB6B00A86CB8 /* CreateiPhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48DA762090EB6B00A86CB8 /* CreateiPhone.swift */; };
+		1F48DA792090EBEE00A86CB8 /* CreateAndroidPhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48DA782090EBEE00A86CB8 /* CreateAndroidPhone.swift */; };
+		1F48DA7B2090EC5200A86CB8 /* TemplateTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48DA7A2090EC5200A86CB8 /* TemplateTest.swift */; };
 		1F7E196D206C090200AB8B2F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7E196C206C090200AB8B2F /* Extensions.swift */; };
 		1F7E196F206C092000AB8B2F /* Comparison.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7E196E206C092000AB8B2F /* Comparison.swift */; };
 		1F7E1973206C0D8700AB8B2F /* Prototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7E1972206C0D8700AB8B2F /* Prototype.swift */; };
@@ -69,6 +73,10 @@
 		1F48DA68208CF4B300A86CB8 /* ChatMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMediator.swift; sourceTree = "<group>"; };
 		1F48DA6A208CF5CD00A86CB8 /* ThreeObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeObject.swift; sourceTree = "<group>"; };
 		1F48DA6C208CF63500A86CB8 /* MediatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediatorTest.swift; sourceTree = "<group>"; };
+		1F48DA742090EA1800A86CB8 /* CreatePhoneTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePhoneTemplate.swift; sourceTree = "<group>"; };
+		1F48DA762090EB6B00A86CB8 /* CreateiPhone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateiPhone.swift; sourceTree = "<group>"; };
+		1F48DA782090EBEE00A86CB8 /* CreateAndroidPhone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAndroidPhone.swift; sourceTree = "<group>"; };
+		1F48DA7A2090EC5200A86CB8 /* TemplateTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateTest.swift; sourceTree = "<group>"; };
 		1F7E196C206C090200AB8B2F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		1F7E196E206C092000AB8B2F /* Comparison.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comparison.swift; sourceTree = "<group>"; };
 		1F7E1972206C0D8700AB8B2F /* Prototype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prototype.swift; sourceTree = "<group>"; };
@@ -132,11 +140,30 @@
 			path = Mediator;
 			sourceTree = "<group>";
 		};
+		1F48DA722090E9D900A86CB8 /* Behavior */ = {
+			isa = PBXGroup;
+			children = (
+				1F48DA732090E9EB00A86CB8 /* Template */,
+				1F48DA5F208CF22F00A86CB8 /* Mediator */,
+			);
+			path = Behavior;
+			sourceTree = "<group>";
+		};
+		1F48DA732090E9EB00A86CB8 /* Template */ = {
+			isa = PBXGroup;
+			children = (
+				1F48DA742090EA1800A86CB8 /* CreatePhoneTemplate.swift */,
+				1F48DA762090EB6B00A86CB8 /* CreateiPhone.swift */,
+				1F48DA782090EBEE00A86CB8 /* CreateAndroidPhone.swift */,
+				1F48DA7A2090EC5200A86CB8 /* TemplateTest.swift */,
+			);
+			path = Template;
+			sourceTree = "<group>";
+		};
 		1F6AAF5F2070E59200862956 /* Structural */ = {
 			isa = PBXGroup;
 			children = (
 				1F48DA47208CCA3000A86CB8 /* Adapter */,
-				1F48DA5F208CF22F00A86CB8 /* Mediator */,
 				1F48DA36208CC1BE00A86CB8 /* Decorator */,
 			);
 			path = Structural;
@@ -180,6 +207,7 @@
 		1F94DD6B20695463002024A3 /* PatternDesign */ = {
 			isa = PBXGroup;
 			children = (
+				1F48DA722090E9D900A86CB8 /* Behavior */,
 				1F6AAF5F2070E59200862956 /* Structural */,
 				1F7E1970206C0C9C00AB8B2F /* Creational */,
 				1FFA6F12206954FB00611D1F /* Other */,
@@ -281,7 +309,11 @@
 				1F48DA44208CC43400A86CB8 /* DecoratorPush.swift in Sources */,
 				1F48DA5E208CF03300A86CB8 /* AdapterTwo.swift in Sources */,
 				1F48DA38208CC1D900A86CB8 /* Decorator.swift in Sources */,
+				1F48DA792090EBEE00A86CB8 /* CreateAndroidPhone.swift in Sources */,
+				1F48DA7B2090EC5200A86CB8 /* TemplateTest.swift in Sources */,
+				1F48DA772090EB6B00A86CB8 /* CreateiPhone.swift in Sources */,
 				1F48DA56208CECAE00A86CB8 /* AdapterProtocol.swift in Sources */,
+				1F48DA752090EA1800A86CB8 /* CreatePhoneTemplate.swift in Sources */,
 				1F48DA3E208CC34200A86CB8 /* BaseNotification.swift in Sources */,
 				1F48DA69208CF4B300A86CB8 /* ChatMediator.swift in Sources */,
 				1F48DA65208CF32B00A86CB8 /* OneSubject.swift in Sources */,
