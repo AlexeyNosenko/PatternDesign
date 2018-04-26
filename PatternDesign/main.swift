@@ -14,7 +14,8 @@ let tests: [Testable] = [SingletonTest(),
                          DecoratorTest(),
                          AdapterTest(),
                          MediatorTest(),
-                         TemplateTest()]
+                         TemplateTest(),
+                         ObserverTest()]
 
 for t in tests {
     t.printName()

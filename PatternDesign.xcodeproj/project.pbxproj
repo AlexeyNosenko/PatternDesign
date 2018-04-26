@@ -30,6 +30,11 @@
 		1F48DA772090EB6B00A86CB8 /* CreateiPhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48DA762090EB6B00A86CB8 /* CreateiPhone.swift */; };
 		1F48DA792090EBEE00A86CB8 /* CreateAndroidPhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48DA782090EBEE00A86CB8 /* CreateAndroidPhone.swift */; };
 		1F48DA7B2090EC5200A86CB8 /* TemplateTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48DA7A2090EC5200A86CB8 /* TemplateTest.swift */; };
+		1F48DA7E209234B100A86CB8 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48DA7D209234B100A86CB8 /* Observer.swift */; };
+		1F48DA802092351000A86CB8 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48DA7F2092351000A86CB8 /* Observable.swift */; };
+		1F48DA822092361800A86CB8 /* ObservableClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48DA812092361800A86CB8 /* ObservableClass.swift */; };
+		1F48DA842092380F00A86CB8 /* ObserverClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48DA832092380F00A86CB8 /* ObserverClass.swift */; };
+		1F48DA8620923A2A00A86CB8 /* ObserverTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48DA8520923A2A00A86CB8 /* ObserverTest.swift */; };
 		1F7E196D206C090200AB8B2F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7E196C206C090200AB8B2F /* Extensions.swift */; };
 		1F7E196F206C092000AB8B2F /* Comparison.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7E196E206C092000AB8B2F /* Comparison.swift */; };
 		1F7E1973206C0D8700AB8B2F /* Prototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7E1972206C0D8700AB8B2F /* Prototype.swift */; };
@@ -77,6 +82,11 @@
 		1F48DA762090EB6B00A86CB8 /* CreateiPhone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateiPhone.swift; sourceTree = "<group>"; };
 		1F48DA782090EBEE00A86CB8 /* CreateAndroidPhone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAndroidPhone.swift; sourceTree = "<group>"; };
 		1F48DA7A2090EC5200A86CB8 /* TemplateTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateTest.swift; sourceTree = "<group>"; };
+		1F48DA7D209234B100A86CB8 /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		1F48DA7F2092351000A86CB8 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		1F48DA812092361800A86CB8 /* ObservableClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableClass.swift; sourceTree = "<group>"; };
+		1F48DA832092380F00A86CB8 /* ObserverClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverClass.swift; sourceTree = "<group>"; };
+		1F48DA8520923A2A00A86CB8 /* ObserverTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverTest.swift; sourceTree = "<group>"; };
 		1F7E196C206C090200AB8B2F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		1F7E196E206C092000AB8B2F /* Comparison.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comparison.swift; sourceTree = "<group>"; };
 		1F7E1972206C0D8700AB8B2F /* Prototype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prototype.swift; sourceTree = "<group>"; };
@@ -143,6 +153,7 @@
 		1F48DA722090E9D900A86CB8 /* Behavior */ = {
 			isa = PBXGroup;
 			children = (
+				1F48DA7C2092346200A86CB8 /* Observer */,
 				1F48DA732090E9EB00A86CB8 /* Template */,
 				1F48DA5F208CF22F00A86CB8 /* Mediator */,
 			);
@@ -158,6 +169,18 @@
 				1F48DA7A2090EC5200A86CB8 /* TemplateTest.swift */,
 			);
 			path = Template;
+			sourceTree = "<group>";
+		};
+		1F48DA7C2092346200A86CB8 /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				1F48DA7D209234B100A86CB8 /* Observer.swift */,
+				1F48DA7F2092351000A86CB8 /* Observable.swift */,
+				1F48DA812092361800A86CB8 /* ObservableClass.swift */,
+				1F48DA832092380F00A86CB8 /* ObserverClass.swift */,
+				1F48DA8520923A2A00A86CB8 /* ObserverTest.swift */,
+			);
+			path = Observer;
 			sourceTree = "<group>";
 		};
 		1F6AAF5F2070E59200862956 /* Structural */ = {
@@ -229,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				1F7E196E206C092000AB8B2F /* Comparison.swift */,
+				1F7E196C206C090200AB8B2F /* Extensions.swift */,
 				1FFA6F152069551700611D1F /* Protocols */,
 			);
 			path = Other;
@@ -238,7 +262,6 @@
 			isa = PBXGroup;
 			children = (
 				1FFA6F132069551300611D1F /* Testable.swift */,
-				1F7E196C206C090200AB8B2F /* Extensions.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -306,6 +329,7 @@
 				1F7E196F206C092000AB8B2F /* Comparison.swift in Sources */,
 				1F48DA58208CECD600A86CB8 /* Adapter.swift in Sources */,
 				1F48DA63208CF2D300A86CB8 /* ChatProtocol.swift in Sources */,
+				1F48DA8620923A2A00A86CB8 /* ObserverTest.swift in Sources */,
 				1F48DA44208CC43400A86CB8 /* DecoratorPush.swift in Sources */,
 				1F48DA5E208CF03300A86CB8 /* AdapterTwo.swift in Sources */,
 				1F48DA38208CC1D900A86CB8 /* Decorator.swift in Sources */,
@@ -313,6 +337,8 @@
 				1F48DA7B2090EC5200A86CB8 /* TemplateTest.swift in Sources */,
 				1F48DA772090EB6B00A86CB8 /* CreateiPhone.swift in Sources */,
 				1F48DA56208CECAE00A86CB8 /* AdapterProtocol.swift in Sources */,
+				1F48DA842092380F00A86CB8 /* ObserverClass.swift in Sources */,
+				1F48DA802092351000A86CB8 /* Observable.swift in Sources */,
 				1F48DA752090EA1800A86CB8 /* CreatePhoneTemplate.swift in Sources */,
 				1F48DA3E208CC34200A86CB8 /* BaseNotification.swift in Sources */,
 				1F48DA69208CF4B300A86CB8 /* ChatMediator.swift in Sources */,
@@ -320,6 +346,7 @@
 				1F7E196D206C090200AB8B2F /* Extensions.swift in Sources */,
 				1F7E1977206C133000AB8B2F /* Product.swift in Sources */,
 				1F7E1973206C0D8700AB8B2F /* Prototype.swift in Sources */,
+				1F48DA7E209234B100A86CB8 /* Observer.swift in Sources */,
 				1F94DD6D20695464002024A3 /* main.swift in Sources */,
 				1F48DA5A208CED7400A86CB8 /* Service.swift in Sources */,
 				1F7E1975206C10BB00AB8B2F /* PrototypeTest.swift in Sources */,
@@ -328,6 +355,7 @@
 				1FFA6F172069554A00611D1F /* SingletonTest.swift in Sources */,
 				1F48DA6D208CF63500A86CB8 /* MediatorTest.swift in Sources */,
 				1FFA6F11206954F000611D1F /* Singleton.swift in Sources */,
+				1F48DA822092361800A86CB8 /* ObservableClass.swift in Sources */,
 				1FFA6F142069551300611D1F /* Testable.swift in Sources */,
 				1F48DA6B208CF5CD00A86CB8 /* ThreeObject.swift in Sources */,
 				1F48DA3A208CC23700A86CB8 /* DecoratorTest.swift in Sources */,
