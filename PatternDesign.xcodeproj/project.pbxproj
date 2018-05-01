@@ -41,6 +41,12 @@
 		1F7E1975206C10BB00AB8B2F /* PrototypeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7E1974206C10BB00AB8B2F /* PrototypeTest.swift */; };
 		1F7E1977206C133000AB8B2F /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7E1976206C133000AB8B2F /* Product.swift */; };
 		1F94DD6D20695464002024A3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F94DD6C20695464002024A3 /* main.swift */; };
+		1FB64596209782A1003BBD1E /* Creator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB64595209782A1003BBD1E /* Creator.swift */; };
+		1FB645982097831C003BBD1E /* FreightTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB645972097831C003BBD1E /* FreightTransport.swift */; };
+		1FB6459A209783BB003BBD1E /* Truck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB64599209783BB003BBD1E /* Truck.swift */; };
+		1FB6459C20978472003BBD1E /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB6459B20978472003BBD1E /* Ship.swift */; };
+		1FB645A220978629003BBD1E /* FactoryMethodTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB645A120978629003BBD1E /* FactoryMethodTest.swift */; };
+		1FB645A420978808003BBD1E /* LogisticsCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB645A320978808003BBD1E /* LogisticsCreator.swift */; };
 		1FFA6F11206954F000611D1F /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFA6F10206954F000611D1F /* Singleton.swift */; };
 		1FFA6F142069551300611D1F /* Testable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFA6F132069551300611D1F /* Testable.swift */; };
 		1FFA6F172069554A00611D1F /* SingletonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFA6F162069554A00611D1F /* SingletonTest.swift */; };
@@ -94,6 +100,12 @@
 		1F7E1976206C133000AB8B2F /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		1F94DD6920695463002024A3 /* PatternDesign */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PatternDesign; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F94DD6C20695464002024A3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		1FB64595209782A1003BBD1E /* Creator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Creator.swift; sourceTree = "<group>"; };
+		1FB645972097831C003BBD1E /* FreightTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreightTransport.swift; sourceTree = "<group>"; };
+		1FB64599209783BB003BBD1E /* Truck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Truck.swift; sourceTree = "<group>"; };
+		1FB6459B20978472003BBD1E /* Ship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ship.swift; sourceTree = "<group>"; };
+		1FB645A120978629003BBD1E /* FactoryMethodTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryMethodTest.swift; sourceTree = "<group>"; };
+		1FB645A320978808003BBD1E /* LogisticsCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogisticsCreator.swift; sourceTree = "<group>"; };
 		1FFA6F10206954F000611D1F /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		1FFA6F132069551300611D1F /* Testable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Testable.swift; sourceTree = "<group>"; };
 		1FFA6F162069554A00611D1F /* SingletonTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonTest.swift; sourceTree = "<group>"; };
@@ -195,6 +207,7 @@
 		1F7E1970206C0C9C00AB8B2F /* Creational */ = {
 			isa = PBXGroup;
 			children = (
+				1FB6459420978266003BBD1E /* Factory method */,
 				1F7E1971206C0CA700AB8B2F /* Prototype */,
 				1FFA6F0F2069548D00611D1F /* Singleton */,
 			);
@@ -237,6 +250,19 @@
 				1F94DD6C20695464002024A3 /* main.swift */,
 			);
 			path = PatternDesign;
+			sourceTree = "<group>";
+		};
+		1FB6459420978266003BBD1E /* Factory method */ = {
+			isa = PBXGroup;
+			children = (
+				1FB64595209782A1003BBD1E /* Creator.swift */,
+				1FB645972097831C003BBD1E /* FreightTransport.swift */,
+				1FB64599209783BB003BBD1E /* Truck.swift */,
+				1FB6459B20978472003BBD1E /* Ship.swift */,
+				1FB645A120978629003BBD1E /* FactoryMethodTest.swift */,
+				1FB645A320978808003BBD1E /* LogisticsCreator.swift */,
+			);
+			path = "Factory method";
 			sourceTree = "<group>";
 		};
 		1FFA6F0F2069548D00611D1F /* Singleton */ = {
@@ -325,11 +351,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F48DA61208CF26C00A86CB8 /* Mediator.swift in Sources */,
+				1FB6459C20978472003BBD1E /* Ship.swift in Sources */,
 				1F48DA67208CF34100A86CB8 /* TwoSubject.swift in Sources */,
+				1FB645982097831C003BBD1E /* FreightTransport.swift in Sources */,
 				1F7E196F206C092000AB8B2F /* Comparison.swift in Sources */,
 				1F48DA58208CECD600A86CB8 /* Adapter.swift in Sources */,
 				1F48DA63208CF2D300A86CB8 /* ChatProtocol.swift in Sources */,
 				1F48DA8620923A2A00A86CB8 /* ObserverTest.swift in Sources */,
+				1FB6459A209783BB003BBD1E /* Truck.swift in Sources */,
 				1F48DA44208CC43400A86CB8 /* DecoratorPush.swift in Sources */,
 				1F48DA5E208CF03300A86CB8 /* AdapterTwo.swift in Sources */,
 				1F48DA38208CC1D900A86CB8 /* Decorator.swift in Sources */,
@@ -337,11 +366,13 @@
 				1F48DA7B2090EC5200A86CB8 /* TemplateTest.swift in Sources */,
 				1F48DA772090EB6B00A86CB8 /* CreateiPhone.swift in Sources */,
 				1F48DA56208CECAE00A86CB8 /* AdapterProtocol.swift in Sources */,
+				1FB645A420978808003BBD1E /* LogisticsCreator.swift in Sources */,
 				1F48DA842092380F00A86CB8 /* ObserverClass.swift in Sources */,
 				1F48DA802092351000A86CB8 /* Observable.swift in Sources */,
 				1F48DA752090EA1800A86CB8 /* CreatePhoneTemplate.swift in Sources */,
 				1F48DA3E208CC34200A86CB8 /* BaseNotification.swift in Sources */,
 				1F48DA69208CF4B300A86CB8 /* ChatMediator.swift in Sources */,
+				1FB64596209782A1003BBD1E /* Creator.swift in Sources */,
 				1F48DA65208CF32B00A86CB8 /* OneSubject.swift in Sources */,
 				1F7E196D206C090200AB8B2F /* Extensions.swift in Sources */,
 				1F7E1977206C133000AB8B2F /* Product.swift in Sources */,
@@ -350,6 +381,7 @@
 				1F94DD6D20695464002024A3 /* main.swift in Sources */,
 				1F48DA5A208CED7400A86CB8 /* Service.swift in Sources */,
 				1F7E1975206C10BB00AB8B2F /* PrototypeTest.swift in Sources */,
+				1FB645A220978629003BBD1E /* FactoryMethodTest.swift in Sources */,
 				1F48DA42208CC41F00A86CB8 /* DecoratorFacebook.swift in Sources */,
 				1F48DA5C208CEECB00A86CB8 /* AdapterTest.swift in Sources */,
 				1FFA6F172069554A00611D1F /* SingletonTest.swift in Sources */,
