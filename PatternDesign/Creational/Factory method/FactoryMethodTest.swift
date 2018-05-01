@@ -15,7 +15,7 @@ enum DeliverType {
 
 class FactoryMethodTest: Testable {
     func printName() {
-        print(" --- Prototype --- ")
+        print(" --- Factory Method --- ")
     }
     
     func test() {
