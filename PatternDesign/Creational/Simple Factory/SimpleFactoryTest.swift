@@ -8,17 +8,22 @@
 
 import Foundation
 
-class FactoryMethodTest: Testable {
+enum DeliverType {
+    case sea
+    case ground
+}
+
+class SimpleFactoryTest: Testable {
     func printName() {
-        print(" --- Factory method --- ")
+        print(" --- Simple Factory --- ")
     }
     
     func test() {
         var logisticsTransport = [FreightTransport]()
-        let shipCreator = ShipCreator()
-        let truckCreator = TruckCreator()
-        logisticsTransport.append(shipCreator.createLoadTransport())
-        logisticsTransport.append(truckCreator.createLoadTransport())
+        let creator = LogisticsCreator()
+        logisticsTransport.append(creator.createLoadTransport(deliverType: .ground))
+        logisticsTransport.append(creator.createLoadTransport(deliverType: .sea))
+        
         logisticsTransport.forEach {
             $0.loadTruck()
             $0.deliver()

@@ -16,7 +16,21 @@ let tests: [Testable] = [SingletonTest(),
                          MediatorTest(),
                          TemplateTest(),
                          ObserverTest(),
-                         FactoryMethodTest()]
+                         SimpleFactoryTest(),
+                         FactoryMethodTest(),
+                         AbstractFactoryTest(),
+                         BuilderTest(),
+                         BridgeTest(),
+                         CompositeTest(),
+                         FacadeTest(),
+                         ProxyTest(),
+                         ChainTest(),
+                         CommandTest(),
+                         IteratorTest(),
+                         StateTest(),
+                         StrategyTest(),
+                         VisitorTest(),
+                         MementoTest()]
 
 for t in tests {
     t.printName()
